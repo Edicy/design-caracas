@@ -3,7 +3,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 	{% include "SiteHeader" %}
-  <title>{{site.name}} > {{page.title}}</title>
 </head>
 
 <body>
@@ -33,7 +32,6 @@
     {% include "Footer" %}
     <div class="clearer"></div>
   </div>
-  {% unless editmode %}{{site.analytics}}{% endunless %}
   {% include "JS" %}
 </body>
 </html>

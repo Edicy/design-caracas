@@ -5,7 +5,6 @@
 <head>
 	{% include "SiteHeader" %}
 	{{blog.rss_link}}
-  <title>{{article.title}} &lt; {{page.title}} | {{site.name}}</title>
 </head>
 
 <body>
@@ -37,6 +36,24 @@
 {% editable article.body %}
         </div>
         
+        <div class="clearfix">
+            {% if editmode %}
+                <div class="cfx article-tags">
+                    <div class="article-tag-icon"></div>
+                    {% editable article.tags %}
+                </div>
+              {% else %}
+                {% unless article.tags == empty %}
+                    <div class="cfx article-tags">
+                        <div class="article-tag-icon"></div>
+                        {% for tag in article.tags %}
+                            <a href="{{ article.page.url }}/tagged/{{ tag.path }}">{{ tag.name }}</a>{% unless forloop.last %}, {% endunless %}
+                        {% endfor %}
+                    </div>
+                {% endunless %}
+            {% endif %}
+        </div>
+        
         <div class="comments_area">
           <a name="comments"></a>
           <h2>{{ "comments_for_count" | lc }}: <span class="edy-site-blog-comments-count">{{ article.comments_count }}</span>
@@ -44,7 +61,7 @@
           {% for comment in article.comments %}
           <div class="comment_area edy-site-blog-comment">
             <div class="comment_author">{{comment.author}} {% removebutton %}</div>
-            <div class="comment">{{comment.body}}</div>
+            <div class="comment">{{comment.body_html}}</div>
           </div>
 
           
@@ -83,7 +100,6 @@
     {% include "Footer" %}
     <div class="clearer"></div>
   </div>
-  {% unless editmode %}{{site.analytics}}{% endunless %}
   {% include "JS" %}
 </body>
 </html>
