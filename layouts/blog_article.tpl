@@ -28,11 +28,11 @@
       <div id="body">
         <h1>{% editable article.title %} <span class="date">{{ article.created_at | format_date:"short" }}</span></h1>
         <div class="blog_article_attributes">{{article.author.name}}&nbsp;&nbsp;&middot;&nbsp;&nbsp;<strong><a href="#comments">{{ "comments_for_count" | lc }}: <span class="edy-site-blog-comments-count">{{ article.comments_count }}</span></a></strong></div>
-        <div class="clearfix excerpt">
+        <div class="clearfix excerpt" data-search-indexing-allowed="true">
           {% editable article.excerpt %}
         </div>
         
-        <div class="articlebody clearfix">
+        <div class="articlebody clearfix" data-search-indexing-allowed="true">
 {% editable article.body %}
         </div>
         

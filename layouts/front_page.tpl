@@ -23,7 +23,7 @@
         {% include "Langmenu" %}
 
       </div>
-      <div id="body" class="clearfix">
+      <div id="body" class="clearfix" data-search-indexing-allowed="true">
         {% content %}
 
       </div>
