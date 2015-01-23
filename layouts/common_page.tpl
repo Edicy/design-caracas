@@ -7,7 +7,7 @@
 </head>
 
 <body>
-  <div id="container">
+  <div id="container" class="content-hyphenate">
 
     <div id="left_pane">
       <div id="left_pane_head">

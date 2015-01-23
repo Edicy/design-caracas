@@ -39,6 +39,14 @@ a img {
   hyphens: auto;
 }
 
+.content-hyphenate {
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
 /* General HTML */
 
 
@@ -564,4 +572,10 @@ div#edicy a:hover {
   .comment_form textarea {
     width: 100%;
   }
+}
+
+#container .edy-btn-removecomment {
+  position: relative;
+  top: 1px;
+  line-height: 0 !important;
 }
