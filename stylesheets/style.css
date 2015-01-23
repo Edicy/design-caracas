@@ -291,12 +291,11 @@ div.comment_form_errors ul li {
 }
 
 /** Form items **/
-div.form_area {
+div.form_fields {
   font-size: 14px;
   background-color: #efefef;
   padding: 15px;
   color: #000;
-  margin: 20px 0;
 }
 
 div.form_field {
@@ -333,7 +332,7 @@ div.form_field_error {
   margin-bottom: 5px;
 }
 
-div.form_area input[type='submit'] {
+div.form_fields input[type='submit'] {
   margin-top: 10px;
 }
 
@@ -349,7 +348,8 @@ input.form_field_size_large, textarea.form_field_size_large {
   width: 99%;
 }
 
-.form_area label, .comment_form label {
+.form_fields label, .comment_form label,
+.edy-fe-label {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;
