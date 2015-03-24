@@ -38,42 +38,42 @@
       "component": true,
       "file": "components/js.tpl",
       "layout_name": "js",
-      "title": "js"
+      "title": "JS"
     },
     {
       "content_type": "component",
       "component": true,
       "file": "components/footer.tpl",
       "layout_name": "footer",
-      "title": "footer"
+      "title": "Footer"
     },
     {
       "content_type": "component",
       "component": true,
       "file": "components/langmenu.tpl",
       "layout_name": "langmenu",
-      "title": "langmenu"
+      "title": "Langmenu"
     },
     {
       "content_type": "component",
       "component": true,
       "file": "components/mainmenu.tpl",
       "layout_name": "mainmenu",
-      "title": "mainmenu"
+      "title": "Mainmenu"
     },
     {
       "content_type": "component",
       "component": true,
       "file": "components/mobilemenus.tpl",
       "layout_name": "mobilemenus",
-      "title": "mobilemenus"
+      "title": "Mobilemenus"
     },
     {
       "content_type": "component",
       "component": true,
       "file": "components/siteheader.tpl",
       "layout_name": "siteheader",
-      "title": "siteheader"
+      "title": "SiteHeader"
     }
   ],
   "assets": [
